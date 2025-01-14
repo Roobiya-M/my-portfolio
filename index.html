@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/00143b5dd7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo3.png" alt="logo" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Roobiya</span> M<br> from India</h1>
+            </div>
+        </div>
+    </div> <!--(end #header)-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-bg.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Results-driven Web Developer with 3 years of experience in designing and implementing user-friendly websites and applications delivering high-quality solutions that enhance user experience and drive engagement</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>Developing Interactive User Interfaces</li>
+                            <li><span>Back-End Development</span><br>Implementing Efficient Logic</li>
+                            <li><span>API Development</span><br>Developing APIs for mobile apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2022 - March 2024</span><br>Full Stack Developer at Mobiotics IT Solutions Pvt Ltd,Banglore</li>
+                            <li><span>January 2022 - July 2022</span><br>Core PHP Developer at WebInfo Softwares, Vytilla</li>
+                            <li><span>September 2017 - March 2018</span><br>Junior Software Engineer at Goldfruit Infotech Pvt Ltd, Kakkanad</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>June 2024 - October 2024</span><br>Online Certification Course on UI Development in React Js</li>
+                            <li><span>July 2021 - December 2021</span><br>Online certification course on Full Stack Development in PHP at Avodha EduTech</li>
+                            <li><span>February 2019 - June 2019</span><br>A certification course and training on WEB AND APP DEVELOPMENT</li>
+                            <li><span>August 2012 - May 2017</span><br>B.Tech Computer Science and Engineering (75%) at Government College Of Engineering Kannur </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- (end  #about)-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <h2>User Interface Development</h2>
+                    <p>There's no style over substance here. I bring together form and function to create something that looks good and performs in accordance with the logic in background brilliantly. Simple and elegant ensuring user satisfaction and retention by providing responsive tech support.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>                    
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Design & Development</h2>
+                    <p>As a Full Stack Developer, I understand the perfect user interface should look good and work even better with a strong backend that fulfills the business needs. Alongside my clients, I uncover problems and solve them. In short, I create border online experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h2>Information Architecture</h2>
+                    <p>It's about organizing the content, requirement and flow of a website based on research and planning.Eventually I come up with a structure/design that balance the user's desires with the business needs with proper communication and technical documentation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div><!---(end  #services)-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>OTT Platform</h3>
+                        <p>This is one of the projects done to implement activation of OTT plans from multiple providers. It act as a middleware.</p>
+                        <a href="https://lcoportalv2.incablenet.net/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Travel App</h3>
+                        <p>A small travel-guide-app built in React Js which can show you beautiful destinations and get a detailed description about them.</p>
+                        <a href="https://roobiya-m.github.io/react-travel-guide-app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Cable TV Network Platform</h3>
+                        <p>LCOs (Local Cable Operator) shall be able to authenticate with the portal, add credit and activate plans for their customers</p>
+                        <a href="https://lcoportalnew.nxtdigital.in/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div><!--end   (#portfolio)-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> roobihamza10@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +918848406995</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://www.instagram.com/roobi_hamza?igsh=MWlvZmZhNWJlamd3Zw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/roobiya-m-3989aa139" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Roobiya-M" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Roobiya M, &nbsp;<i class="fa-solid fa-user-tie"></i>&nbsp;&nbsp;Full Stack Developer</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabName){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+        var sideMenu = document.getElementById('sidemenu');
+        function openmenu() {
+            sideMenu.style.right = "0";
+        }
+        function closemenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyWiyEeqTXzj8q_d7TnKPSjGc_NCOjjrIYcBQ5yE3cH5znAtXPpbQERhhKrVIDd4bw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(() => {
+                    msg.innerHTML = ""
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
